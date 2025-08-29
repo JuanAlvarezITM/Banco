@@ -27,30 +27,7 @@ namespace Banco1
         { Saldo += MontoPa; 
         }
 
-        public void retirar(double MontoPa)
-        {
-            if (MontoPa > Saldo)
-            {
-                Console.WriteLine("Fondos insuficientes");
-            }
-            else
-            {
-                Saldo -= MontoPa;
-            }
-        }
-
-        public void retirar(int MontoPa)
-        {
-            if (MontoPa > Saldo)
-            {
-                Console.WriteLine("Fondos insuficientes");
-            }
-        }
-
-        public void ConsultarSaldo()
-        {
-            Console.Write("Su saldo esta por encima, para el cliente: " + Nombre);
-        }
+ 
 
         public override string ToString()
         {
