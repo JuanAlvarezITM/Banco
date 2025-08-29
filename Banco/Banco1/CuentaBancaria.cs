@@ -41,7 +41,7 @@ namespace Banco1
 
         public void ConsultarSaldo()
         {
-            Console.WriteLine("Su saldo es: " + Saldo);
+            Console.Write("Su saldo esta por encima, para el cliente: " + Nombre);
         }
 
         public override string ToString()
