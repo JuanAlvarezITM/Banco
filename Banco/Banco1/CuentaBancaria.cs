@@ -39,6 +39,14 @@ namespace Banco1
             }
         }
 
+        public void retirar(int MontoPa)
+        {
+            if (MontoPa > Saldo)
+            {
+                Console.WriteLine("Fondos insuficientes");
+            }
+        }
+
         public void ConsultarSaldo()
         {
             Console.Write("Su saldo esta por encima, para el cliente: " + Nombre);
