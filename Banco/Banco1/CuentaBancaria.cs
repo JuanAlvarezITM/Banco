@@ -22,7 +22,7 @@ namespace Banco1
             Saldo = SaldoPa;
         }
 
-        //metodos
+        //Los metodos segun POO deben iniciar en infinitivo
         public void depositar(double MontoPa)
         { Saldo += MontoPa; 
         }
