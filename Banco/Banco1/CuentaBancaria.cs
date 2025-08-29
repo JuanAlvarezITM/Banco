@@ -22,12 +22,28 @@ namespace Banco1
             Saldo = SaldoPa;
         }
 
-        //Los metodos segun POO deben iniciar en infinitivo
+        //metodos
         public void depositar(double MontoPa)
-        { Saldo += MontoPa; 
+        {
+            Console.WriteLine("Saldo actual: " + Saldo + " pesos.");
         }
 
- 
+        public void retirar(double MontoPa)
+        {
+            if (MontoPa > Saldo)
+            {
+                Console.WriteLine("Fondos insuficientes");
+            }
+            else
+            {
+                Saldo -= MontoPa;
+            }
+        }
+
+        public void ConsultarSaldo()
+        {
+            Console.WriteLine("Su saldo es: " + Saldo);
+        }
 
         public override string ToString()
         {
